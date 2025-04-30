@@ -6,6 +6,36 @@ using System.Threading.Tasks;
 
 namespace SingleInher
 {
+
+    /*
+     * Inheritance: is nothing but deriving properties of one class to 
+     * another class.
+     * 
+     * A class which is giving is called base class or parent or super class.
+     * 
+     * A class which is receiving is called as sub or derived or child
+     * 
+     * because of inheriance sub class can access super class
+     * 
+     * 
+     * because of inheriance super class cannot access sub class members
+     * Types of Inheritance
+     * SingleInheritance
+     * multilevel
+     * multiple
+     * hybrid
+     * hierarchical
+     * 
+     * 
+     * SingleInheritance
+     * Inheriting from one class to another class 
+     * 
+     * 
+     * 
+     * multilevel inheritance:
+     * Inheriting from one class to another class from that class to some other 
+     * class.
+     */
     class HeadOffice
     {
         string Headoffloc;
@@ -17,7 +47,7 @@ namespace SingleInher
         }
         public void DisplayHeadOff()
         {
-            Console.WriteLine("Head off location is {0}",Headoffloc,HeadOffPhone);
+            Console.WriteLine("Head off location is {0}",Headoffloc);
             Console.WriteLine("Head off phone is {0}", HeadOffPhone);
         }
 }
@@ -42,7 +72,7 @@ namespace SingleInher
             base.DisplayHeadOff();
         }
     }
-    class Employee:Branch
+    class Employee : Branch
     {
         int empid;
         string ename;
@@ -61,6 +91,7 @@ namespace SingleInher
             Console.WriteLine("Employee designation is {0}", edesig);
             base.BranchDisplay();
         }
+    
         internal class Program
         {
             static void Main(string[] args)
